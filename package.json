@@ -1,0 +1,16 @@
+{
+  "name": "gcs-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fetch": "node index.js",
+    "staging:fetch": "source .env.staging && node index.js && direnv reload",
+    "prod:fetch": "direnv reload && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^3.2.1"
+  }
+}
